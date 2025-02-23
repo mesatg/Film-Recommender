@@ -1,0 +1,41 @@
+<!-- 🌐 **index.html (Tam Hali - Aranan Resim Arama Kutusunun Soluna Taşındı)** -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Film Öneri Sistemi</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <style>
+        .search-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+        #selected-movie img {
+            width: 100px;
+            height: auto;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>🎬 Film Öneri Sistemi</h1>
+    <div class="container search-container">
+        <div id="selected-movie" class="selected-movie"></div>
+        <div>
+            <input type="text" id="movie-input" placeholder="Film ismi girin...">
+            <div id="suggestions" class="autocomplete-suggestions"></div>
+            <button id="recommend-btn">Önerileri Göster</button>
+        </div>
+    </div>
+
+    <div id="recommendations" class="movie-list"></div>
+
+    <div class="footer-signature">Esat Gözütok © 2025</div>
+
+    <script src="/static/js/script.js"></script>
+</body>
+</html>
